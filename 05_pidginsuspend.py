@@ -1,4 +1,14 @@
 #!/usr/bin/python
+#
+# Disconnect all active pidgin accounts on suspend and reconnect all
+# active pidgin accounts on resume.
+#
+# Place in /etc/pm/sleep.d/
+#
+# Name should start with a low number e.g. "05_pidginsuspend" and you
+# have to set the execute bit (i.e. sudo chmod +x)
+#
+# Author: Joshua A Haas
 
 import dbus,sys,syslog
 
